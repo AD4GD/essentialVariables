@@ -1,0 +1,36 @@
+Group;ECV;Product;Frequency;Resolution;RequiredMeasurementuncertainty;Stabilityperdecadeunlessotherwisespecified;StandardsReferences;EntitySatellite;Entityinsitu;;;;
+Physical;Ocean Surface Heat Flux;Latent Heat Flux;  hourly to monthly;1-25km;10-15Wm-2;1-2Wm-2;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;;JCOMM
+Physical;Ocean Surface Heat Flux;Sensible Heat Flux;  hourly to monthly;1-25km;10-15Wm-2;1-2Wm-2;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;;JCOMM
+Physical;Sea Ice;Sea Ice Concentration;Weekly;10 km to 15 km;5% ice area fraction;5%;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;
+Physical;Sea Ice;Sea Ice Extent/Edge;Weekly;1 km to 5 km;5 km;unspecified;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;
+Physical;Sea Ice;Sea Ice Thickness;Monthly;25km;0.1 m;unspecified;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;
+Physical;Sea Ice;Sea Ice Drift;Weekly;5 km;1 km/day;unspecified;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;
+Physical;Sea Level;Global Mean Sea Level;Weekly  to monthly;10-100 km;"2-4 mm (global mean); 1 cm over a grid mesh";< 0.3 mm/yr (global mean);See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;JCOMM
+Physical;Sea Level;Regional Sea Level;Hourly to weekly;10 km;1 cm (over grid mesh of 50-100 km);< 1 mm/yr (for grid mesh of 50-100 km);See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;JCOMM
+Physical;Sea State;Wave Height;3 hourly;25 km;10 cm;5 cm;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;JCOMM
+Physical;Sea Surface Salinity;Sea Surface Salinity;Hourly to monthly;1-100 km;0.01 psu;0.001 psu;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;JCOMM
+Physical;Sea Surface Temperature;Sea Surface Temperature;Hourly to weekly;1-100 km;0.1 K over 100 km scales;< 0.03 K over 100 km scales;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;JCOMM
+Physical;Subsurface Curents;Interior Currents;Hourly to weekly  ;1-10km;0.02m/s; Not specified;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;;JCOMM
+Physical;Subsurface Salinity;Interior Salinity;Hourly to monthly ;1-10km;0.01psu;Not specified ;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;;JCOMM
+Physical;Subsurface Temperature;Interior Temperature;Hourly to monthly;1-10km;0.01K; not specified;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;;JCOMM
+Physical;Surface Currents;Surface Geostrophic Current;Hourly to weekly ;30 km;5 cm/s;Not specified ;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;WGClimate;JCOMM
+Physical;Surface Stress;Surface Stress;hourly-monthly ;10-100km;0.001-4Nm2;Not specified ;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;;JCOMM
+Biogechemical;Inorganic Carbon;Interior ocean carbon storage. At least 2 of: Dissolved Inorganic Carbon (DIC), Total Alkalinity (TA) or pH;decadal ;Every 20°;"TA/DIC ±2 μM; pH ±0.005";;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Inorganic Carbon;pCO2 (to provide Air-sea flux of CO2);Weekly to decadal;Every 10°, (Denser in the coastal domain, surface);±2 μatm;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Nitrous Oxide;Interior ocean N2O;Annual to decadal ;Every 20°;"discrete samples: ~±5%;";;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Nitrous Oxide;N2O air-sea flux;Annual to decadal ;Every 20°;cont. sampling: <±1%;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Nutrients;Interior ocean Concentrations of silicate, phosphate, nitrate;decadal ;Every 20°;"PO4: ±0.05 (μM); NO3: ±0.03 (μM); Si: ±0.1 (μM)";;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;;GOOS
+Biogechemical;Ocean Colour;Water Leaving Radiance;Daily;4 km;5% (blue & green wavelengths);0,50%;See http://www.ioccp.org/index.php/foo ;WGClimate;
+Biogechemical;Ocean Colour;Chlorophyll-a Concentration;Weekly averages;4 km;30%;3%;See http://www.ioccp.org/index.php/foo ;WGClimate;
+Biogechemical;Oxygen;Interior ocean Oxygen concentration;Weekly to Decadal;3-20° degrees;0.5 uM - 2 uM;;See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php;;GOOS
+Biogechemical;Transient Tracers;Interior ocean CFC-12;Annual to decadal ;Every 20°;±1%;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Transient Tracers;Interior ocean CFC-11;Annual to decadal ;Every 20°;±1%;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Transient Tracers;Interior ocean SF6;Annual to decadal ;Every 20°;±1%;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Transient Tracers;Interior ocean tritium ;Annual to decadal ;Every 20°;±0.5%, 0.005 TU;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Transient Tracers;Interior ocean 3He;Annual to decadal ;Every 20°;δ3He ±0.15%;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Transient Tracers;Interior ocean 14C;Annual to decadal ;Every 20°;14C ±0.4%;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biogechemical;Transient Tracers;Interior ocean  39Ar;Annual to decadal ;Every 20°;14C ±0.4%;;See http://www.ioccp.org/index.php/foo ;;GOOS
+Biological/Ecosystems;Marine Habitat Properties;Coral Reefs,;Requirements under assessment by GOOS Biology Panel;;;;;;GOOS
+Biological/Ecosystems;Marine Habitat Properties;Mangrove Forests, Seagrass Beds, Macroalgal Communities;Requirements under assessment by GOOS Biology Panel;;;;;TBD;GOOS
+Biological/Ecosystems;Plankton;Phytoplankton;;;;;;;GOOS
+Biological/Ecosystems;Plankton;Zoo plankton;;;;;;;GOOS

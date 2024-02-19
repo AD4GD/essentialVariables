@@ -1,0 +1,58 @@
+Group;ECV;Product;Frequency;Resolution;RequiredMeasurementuncertainty;Stabilityperdecadeunlessotherwisespecified;StandardsReferences;EntitySatellite;Entityinsitu;;;;
+Biosphere;Above-ground biomass;Maps of AGB;Annual;500m-1km (based on satellite  observations of 100-200m);< 20% error for biomass values > 50 t/ha, and 10 t/ha for biomass values ≤ 50 t/ha;10%;"No agreed standards but see: GOFC-GOLD (2015b); GFOI (2013)";WGClimate;
+Biosphere;Albedo;Maps of DHR albedo for adaptation;Daily;50m;"max(5%; 0.0025)";"max(1%; 0.001)";;WGClimate;BSRN
+Biosphere;Albedo;Maps of BHR albedo for adaptation;;50m;"max(5%; 0.0025)";"max(1%; 0.001)";;WGClimate;BSRN
+Biosphere;Albedo;Maps of DHR albedo for modelling;Daily;200/500m;"max(5%; 0.0025)";"max(1%; 0.001)";;WGClimate;
+Biosphere;Albedo;Maps of BHR albedo for modelling;;200/500m;"max(5%; 0.0025)";"max(1%; 0.001)";;WGClimate;
+Anthroposphere;Anthropogenic Greenhouse Gas Fluxes;Emissions from fossil fuel use, industry, agriculture and waste sectors.;Annual;By country and sector;"Globally 5%; Nationally 10%";;"IPCC (2006); IPCC (2013)";;TBD[2]
+Anthroposphere;Anthropogenic Greenhouse Gas Fluxes;Emissions/ removals by IPCC land categories;Annual;By country/region;"Globally 15%; Nationally 20%";;;;TBD[2]
+Anthroposphere;Anthropogenic Greenhouse Gas Fluxes;Estimated fluxes by inversions of observed atmospheric composition - continental;Annual;1000 - 10,000 km;10%;;Maps for modelling and adaptation;WGClimate;TBD[2]
+Anthroposphere;Anthropogenic Greenhouse Gas Fluxes;Estimated fluxes by inversions of observed atmospheric composition - national;Annual;100-1000 km;30%;;;WGClimate;TBD[2]
+Anthroposphere;Anthropogenic Greenhouse Gas Fluxes;Hi-res CO2 column concentrations to monitor point sources;4 hourly;1 km;1ppm;;;WGClimate;TBD[2]
+Anthroposphere;Anthropogenic Water Use;Volume of water per year;Annual;100 km;;;;;AQUASTAT
+Biosphere;Fire ;Burnt Areas;24 hours;30m;15% (error of omission and commission), compared to 30 m observations;; None;WGClimate;
+Biosphere;Fire ;Active fire maps ;6 hours at all latitudes from Polar-Orbiting and 1 hour from Geostationary;"0.25-1 km (Polar); 1-3 km (Geo)";"5% error of commission; 10% error of omission; Based on per-fire comparisons for fires above  target  threshold of  5 MW/km² equivalent integrated FRP per pixel (i.e. for a 0.5 km² pixel the target threshold would be 2.5 MW, for a 9 km² pixel it would be 45 MW).";; None;WGClimate;
+Biosphere;Fire ;Fire radiative power;6 hours at all latitudes from Polar-Orbiting and 1 hour from Geostationary;"0.25-1 km (Polar); 1-3 km (Geo)";10% integrated over pixel. Based on target detection threshold of  5 MW/km² equivalent integrated FRP per pixel (i.e. for a 0.5 km² pixel the target threshold would be 2.5 MW, for a 9 km² pixel it would be 45 MW).and with the same detection accuracy as the Active Fire Maps.;; None;WGClimate;
+Biosphere;Fraction of Absorbed Photosynthetically Active Radiation (FAPAR);maps of FAPAR for modelling;Daily;200/500 m;"max(10%; 0.05)";"max(3%; 0.02)";;WGClimate;
+Biosphere;Fraction of Absorbed Photosynthetically Active Radiation (FAPAR);maps of FAPAR for adaptation;;50m;"max(10%; 0.05)";"max(3%; 0.02)";;WGClimate;
+Cryosphere;Glaciers;Glacier area;Annual (at end of ablation season);"Horizontal 15-30m; Vertical 1m";5%;;"IGOS (2009); Paul et al. (2009)";WGClimate;GCW
+Cryosphere;Glaciers;Glacier elevation change;Decadal;"Horizontal 30m-100mx; Vertical 1m";2m/decade;1m/decade;Zemp et al. (2013);WGClimate;GCW
+Cryosphere;Glaciers;Glacier mass change;seasonal to annual (the latter at end of ablation period);Vertical: 0.01m or 10kg/m2 (at point location);better than  200kg/m2/year  (glacier-wide);;;WGClimate;GCW
+Hydrosphere;Groundwater;Groundwater volume change;Monthly;100 km;10 cm;tbd;ISO/TC 147;;WHYCOS
+Hydrosphere;Groundwater;Groundwater level;Weekly;Per well;1 cm;;ISO 5667-18:2001 part 18;;WHYCOS
+Hydrosphere;Groundwater;Groundwater recharge;Weekly;Per well;10 % (relative);;;;WHYCOS
+Hydrosphere;Groundwater;Groundwater discharge;Weekly;Per well;10 % (relative);;;;WHYCOS
+Hydrosphere;Groundwater;Wellhead level;Weekly;Per well;1 cm;;;;WHYCOS
+Hydrosphere;Groundwater;Water quality;Weekly;Per well;tbd;;;;TBD
+Cryosphere;Ice Sheets and ice shelves;Surface Elevation Change;30 days;Horizontal 100m;0.1m/year;0.1m/year;;WGClimate;GCW
+Cryosphere;Ice Sheets and ice shelves;Ice velocity;30 days;Horizontal 100m;0.1m/year;0.1m/year;;WGClimate;GCW
+Cryosphere;Ice Sheets and ice shelves;Ice mass change;30 days;Horizontal 50km;10km3/year;10km3/year;;WGClimate;GCW
+Cryosphere;Ice Sheets and ice shelves;Grounding line location and thickness;Yearly;"Horizontal 100 m; Vertical 10 m";1 m;10 m;;WGClimate;GCW
+Hydrosphere;Lakes;Lake water level;Daily.;100 m;"3 cm for large lakes; 10 cm for the remainder";1 cm/decade;WMO (2006, 2008a);WGClimate;HYDROLARE
+Hydrosphere;Lakes;Water Extent;Daily;20 m;"10 % (relative); 5% (for 70  largest lakes)";5%/%/decade;WMO (2006, 2008a);WGClimate;HYDROLARE
+Hydrosphere;Lakes;Lake surface water temperature;Weekly;300 m;1 K;0.1 K/decade;WMO (2006, 2008a);WGClimate;HYDROLARE
+Hydrosphere;Lakes;Lake ice thickness;Monthly;100m;1-2 cm;;;WGClimate;HYDROLARE
+Hydrosphere;Lakes;Lake Ice Cover;Daily;300 m;10%;1 % /decade;;WGClimate;HYDROLARE
+Hydrosphere;Lakes;Lake Colour (Lake Water Leaving Reflectance);Weekly;300 m;30%;1 %/decade;;WGClimate;HYDROLARE
+Biosphere;Land cover;Maps of land cover;Annual;250m;15% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV 250 m;15% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV 250 m;No agreed standards but see GLCN (2014) and GOFC-GOLD (2015a);WGClimate;GOFC-GOLD
+Biosphere;Land cover;Maps of high resolution land cover;5 year;10 - 30m;5% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV 10-30 m;5% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV 10-30 m;;WGClimate;GOFC-GOLD
+Biosphere;Land cover;Maps of key IPCC land use, related changes and land management types;1-10 years (incl. historical data);10-1000 m (depending on time period);20% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV;20% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV;IPCC (2006);;GOFC-GOLD
+Biosphere;Land Surface Temperature;Maps of land surface temperature;3 hour;1 km;1K;<0.1K/decade;;WGClimate;
+Biosphere;Leaf Area Index (LAI);maps of LAI for modelling;Daily;250m;max(15%);"max(10%; 0.25)";;WGClimate;
+Biosphere;Leaf Area Index (LAI);maps of LAI for adaptation;;50m;;;;WGClimate;
+Cryosphere;Permafrost;Thermal State of Permafrost ;Daily to weekly;Sufficient sites to characterise each bio-climate zone;0.1K;;;;GCW
+Cryosphere;Permafrost;Active Layer Thickness ;;;2cm;;;;GCW
+Hydrosphere;River Discharge;River discharge;Daily;Per river;10 % (relative);;ISO/TC 113: WMO (2010) WMO (2008a) WMO (2009);;WHYCOS
+Hydrosphere;River Discharge;Water Level;Daily;100m;10 cm;1 cm/yr;ISO/TC 113: WMO (2010) WMO (2008a) WMO (2009);;WHYCOS
+Hydrosphere;River Discharge;Flow Velocity;Few times per year for station calibration;Per river;10 % (relative);;ISO/TC 113: WMO (2010) WMO (2008a) WMO (2009);;WHYCOS
+Hydrosphere;River Discharge;Cross-section;Few times per year for station calibration;Per river;10 % (relative);;ISO/TC 113: WMO (2010) WMO (2008a) WMO (2009);;WHYCOS
+Cryosphere;Snow ;Area  covered by snow ;Daily;1km (100m in complex terrain);"5% (maximum error of omission and commission in snow area); location accuracy better than 1/3 IFOV with target IFOV 100 m in areas of complex terrain, 1 km elsewhere";"4% (maximum error of omission and commission in snow area); location accuracy better than 1/3 IFOV with target IFOV 100 m in areas of complex terrain, 1 km elsewhere";WMO (2008c) IGOS (2007), IACS/UNESCO, 2009;;WIGOS, GCW
+Cryosphere;Snow ;snow depth  ;Daily;1km (100m in complex terrain);10mm;10mm;WMO (2008c) IGOS (2007), IACS/UNESCO, 2009;;WIGOS, GCW
+Cryosphere;Snow ;snow water equivalent;Daily;1km;10mm;10mm;;;WIGOS, GCW
+Biosphere;Soil Carbon;Carbon in soil;5 - 10 year;20  km;;;;;TBD
+Biosphere;Soil Carbon;Mineral soil bulk density to 30 cms and 1m;5 - 10 year;20 km;;;;;TBD
+Biosphere;Soil Carbon;Peatlands total depth of profile, area and location;5- 10  year;2 m vertical 20 m horizontal;10%;;;;TBD
+Biosphere;Soil Moisture;Surface soil moisture;Daily;1-25 km;0.04 m3/m3;0.01 m3/m3/year;WMO (2008b);WGClimate;ISMN
+Biosphere;Soil Moisture;Freeze/thaw;Daily;1-25 km;90%;tbd;;WGClimate;ISMN
+Biosphere;Soil Moisture;Surface inundation;Daily;1-25 km;90%;tbd;;;ISMN
+Biosphere;Soil Moisture;Root-zone soil moisture;Daily;1-25 km;0.04 m3/m3;0.01 m3/m3/year;;;ISMN
