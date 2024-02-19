@@ -1,0 +1,753 @@
+@prefix schema:  <https://schema.org/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix base:  <https://w3id.org/ad4gd/ev/> .
+
+base:ecv  rdf:type          skos:ConceptScheme ;
+        rdf:type            dcat:Dataset ;
+        dct:description     "Essential Climate Variables (ECVs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        dct:identifier      "ECV"^^rdfs:Literal ;
+        dct:title           "Essential Climate Variables - codelist scheme"@en ;
+        rdfs:isDefinedBy    <https://gcos.wmo.int/en/essential-climate-variables/> ;
+        skos:definition     "Essential Climate Variables (ECVs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        skos:prefLabel      "Essential Climate Variables - codelist scheme"@en ;
+        dcat:theme          <http://w3id.org/ad4gd/ev/> ;
+        rdfs:seeAlso        base:ECV ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/Physical> ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/Biogechemical> ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/Biological/Ecosystems> .
+
+base:ECV  rdf:type        owl:Class ;
+        rdfs:subClassOf   skos:Concept ;
+        rdfs:label        "Essential Climate Variables - codelist class"@en ;
+        rdfs:comment      "Essential Climate Variables (ecvs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/> ;
+        rdfs:seeAlso      base:ecv .
+
+<https://w3id.org/ad4gd/ev/ecv/Physical>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Physical" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Physical" .
+
+<https://w3id.org/ad4gd/ev/ecv/Biogechemical>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Biogechemical" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Biogechemical" .
+
+<https://w3id.org/ad4gd/ev/ecv/Biological/Ecosystems>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Biological/Ecosystems" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Biological/Ecosystems" .
+
+<https://w3id.org/ad4gd/ev/ecv/OceanSurfaceHeatFlux>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Ocean Surface Heat Flux" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Ocean Surface Heat Flux" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaIce>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Sea Ice" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Sea Ice" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaLevel>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Sea Level" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Sea Level" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaState>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Sea State" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Sea State" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaSurfaceSalinity>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Sea Surface Salinity" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Sea Surface Salinity" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaSurfaceTemperature>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Sea Surface Temperature" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Sea Surface Temperature" .
+
+<https://w3id.org/ad4gd/ev/ecv/SubsurfaceCurents>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Subsurface Curents" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Subsurface Curents" .
+
+<https://w3id.org/ad4gd/ev/ecv/SubsurfaceSalinity>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Subsurface Salinity" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Subsurface Salinity" .
+
+<https://w3id.org/ad4gd/ev/ecv/SubsurfaceTemperature>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Subsurface Temperature" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Subsurface Temperature" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceCurrents>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Surface Currents" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Surface Currents" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceStress>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Surface Stress" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Surface Stress" .
+
+<https://w3id.org/ad4gd/ev/ecv/InorganicCarbon>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Inorganic Carbon" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Inorganic Carbon" .
+
+<https://w3id.org/ad4gd/ev/ecv/NitrousOxide>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Nitrous Oxide" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Nitrous Oxide" .
+
+<https://w3id.org/ad4gd/ev/ecv/Nutrients>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Nutrients" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Nutrients" .
+
+<https://w3id.org/ad4gd/ev/ecv/OceanColour>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Ocean Colour" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Ocean Colour" .
+
+<https://w3id.org/ad4gd/ev/ecv/Oxygen>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Oxygen" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Oxygen" .
+
+<https://w3id.org/ad4gd/ev/ecv/TransientTracers>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Transient Tracers" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Transient Tracers" .
+
+<https://w3id.org/ad4gd/ev/ecv/MarineHabitatProperties>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Marine Habitat Properties" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Marine Habitat Properties" .
+
+<https://w3id.org/ad4gd/ev/ecv/Plankton>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Plankton" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Plankton" .
+
+<https://w3id.org/ad4gd/ev/ecv/Physical>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/OceanSurfaceHeatFlux> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SeaIce> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SeaLevel> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SeaState> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SeaSurfaceSalinity> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SeaSurfaceTemperature> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SubsurfaceCurents> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SubsurfaceSalinity> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SubsurfaceTemperature> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SurfaceCurrents> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SurfaceStress> .
+
+<https://w3id.org/ad4gd/ev/ecv/Biogechemical>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/InorganicCarbon> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/NitrousOxide> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Nutrients> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/OceanColour> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Oxygen> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/TransientTracers> .
+
+<https://w3id.org/ad4gd/ev/ecv/Biological/Ecosystems>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/MarineHabitatProperties> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Plankton> .
+
+base:ecv  owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/LatentHeatFlux> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SensibleHeatFlux> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SeaIceConcentration> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SeaIceExtent/Edge> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SeaIceThickness> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SeaIceDrift> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/GlobalMeanSeaLevel> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/RegionalSeaLevel> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/WaveHeight> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SeaSurfaceSalinity> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SeaSurfaceTemperature> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InteriorCurrents> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InteriorSalinity> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InteriorTemperature> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SurfaceGeostrophicCurrent> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SurfaceStress> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Interioroceancarbonstorage.Atleast2of:DissolvedInorganicCarbon(DIC),TotalAlkalinity(TA)orpH> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/pCO2(toprovideAir-seafluxofCO2)> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InterioroceanN2O> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/N2Oair-seaflux> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InterioroceanConcentrationsofsilicate,phosphate,nitrate> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/WaterLeavingRadiance> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Chlorophyll-aConcentration> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InterioroceanOxygenconcentration> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InterioroceanCFC-12> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InterioroceanCFC-11> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/InterioroceanSF6> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Interioroceantritium> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Interiorocean3He> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Interiorocean14C> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Interiorocean39Ar> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/CoralReefs,> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/MangroveForests,SeagrassBeds,MacroalgalCommunities> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Phytoplankton> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Zooplankton> .
+
+<https://w3id.org/ad4gd/ev/ecv/LatentHeatFlux>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Latent Heat Flux" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Latent Heat Flux" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/OceanSurfaceHeatFlux> ;
+        schema:frequency          "  hourly to monthly" ;
+        base:resolution           "1-25km" ;
+        base:requiredUncertainty  "10-15Wm-2" ;
+        base:stability            "1-2Wm-2" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/SensibleHeatFlux>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Sensible Heat Flux" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Sensible Heat Flux" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/OceanSurfaceHeatFlux> ;
+        schema:frequency          "  hourly to monthly" ;
+        base:resolution           "1-25km" ;
+        base:requiredUncertainty  "10-15Wm-2" ;
+        base:stability            "1-2Wm-2" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaIceConcentration>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Sea Ice Concentration" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Sea Ice Concentration" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaIce> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "10 km to 15 km" ;
+        base:requiredUncertainty  "5% ice area fraction" ;
+        base:stability            "5%" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaIceExtent/Edge>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Sea Ice Extent/Edge" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Sea Ice Extent/Edge" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaIce> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "1 km to 5 km" ;
+        base:requiredUncertainty  "5 km" ;
+        base:stability            "unspecified" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaIceThickness>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Sea Ice Thickness" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Sea Ice Thickness" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaIce> ;
+        schema:frequency          "Monthly" ;
+        base:resolution           "25km" ;
+        base:requiredUncertainty  "0.1 m" ;
+        base:stability            "unspecified" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaIceDrift>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Sea Ice Drift" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Sea Ice Drift" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaIce> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "5 km" ;
+        base:requiredUncertainty  "1 km/day" ;
+        base:stability            "unspecified" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/GlobalMeanSeaLevel>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Global Mean Sea Level" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Global Mean Sea Level" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaLevel> ;
+        schema:frequency          "Weekly  to monthly" ;
+        base:resolution           "10-100 km" ;
+        base:requiredUncertainty  "2-4 mm (global mean); 1 cm over a grid mesh" ;
+        base:stability            "< 0.3 mm/yr (global mean)" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/RegionalSeaLevel>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Regional Sea Level" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Regional Sea Level" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaLevel> ;
+        schema:frequency          "Hourly to weekly" ;
+        base:resolution           "10 km" ;
+        base:requiredUncertainty  "1 cm (over grid mesh of 50-100 km)" ;
+        base:stability            "< 1 mm/yr (for grid mesh of 50-100 km)" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/WaveHeight>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Wave Height" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Wave Height" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaState> ;
+        schema:frequency          "3 hourly" ;
+        base:resolution           "25 km" ;
+        base:requiredUncertainty  "10 cm" ;
+        base:stability            "5 cm" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaSurfaceSalinity>
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaSurfaceSalinity> ;
+        schema:frequency          "Hourly to monthly" ;
+        base:resolution           "1-100 km" ;
+        base:requiredUncertainty  "0.01 psu" ;
+        base:stability            "0.001 psu" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/SeaSurfaceTemperature>
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SeaSurfaceTemperature> ;
+        schema:frequency          "Hourly to weekly" ;
+        base:resolution           "1-100 km" ;
+        base:requiredUncertainty  "0.1 K over 100 km scales" ;
+        base:stability            "< 0.03 K over 100 km scales" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/InteriorCurrents>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior Currents" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior Currents" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SubsurfaceCurents> ;
+        schema:frequency          "Hourly to weekly  " ;
+        base:resolution           "1-10km" ;
+        base:requiredUncertainty  "0.02m/s" ;
+        base:stability            " Not specified" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/InteriorSalinity>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior Salinity" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior Salinity" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SubsurfaceSalinity> ;
+        schema:frequency          "Hourly to monthly " ;
+        base:resolution           "1-10km" ;
+        base:requiredUncertainty  "0.01psu" ;
+        base:stability            "Not specified " ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/InteriorTemperature>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior Temperature" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior Temperature" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SubsurfaceTemperature> ;
+        schema:frequency          "Hourly to monthly" ;
+        base:resolution           "1-10km" ;
+        base:requiredUncertainty  "0.01K" ;
+        base:stability            " not specified" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceGeostrophicCurrent>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Surface Geostrophic Current" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Surface Geostrophic Current" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SurfaceCurrents> ;
+        schema:frequency          "Hourly to weekly " ;
+        base:resolution           "30 km" ;
+        base:requiredUncertainty  "5 cm/s" ;
+        base:stability            "Not specified " ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceStress>
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SurfaceStress> ;
+        schema:frequency          "hourly-monthly " ;
+        base:resolution           "10-100km" ;
+        base:requiredUncertainty  "0.001-4Nm2" ;
+        base:stability            "Not specified " ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:inSitu               "JCOMM" .
+
+<https://w3id.org/ad4gd/ev/ecv/Interioroceancarbonstorage.Atleast2of:DissolvedInorganicCarbon(DIC),TotalAlkalinity(TA)orpH>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean carbon storage. At least 2 of: Dissolved Inorganic Carbon (DIC), Total Alkalinity (TA) or pH" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean carbon storage. At least 2 of: Dissolved Inorganic Carbon (DIC), Total Alkalinity (TA) or pH" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/InorganicCarbon> ;
+        schema:frequency          "decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "TA/DIC ±2 μM; pH ±0.005" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/pCO2(toprovideAir-seafluxofCO2)>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "pCO2 (to provide Air-sea flux of CO2)" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "pCO2 (to provide Air-sea flux of CO2)" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/InorganicCarbon> ;
+        schema:frequency          "Weekly to decadal" ;
+        base:resolution           "Every 10°, (Denser in the coastal domain, surface)" ;
+        base:requiredUncertainty  "±2 μatm" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/InterioroceanN2O>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean N2O" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean N2O" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/NitrousOxide> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "discrete samples: ~±5%;" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/N2Oair-seaflux>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "N2O air-sea flux" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "N2O air-sea flux" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/NitrousOxide> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "cont. sampling: <±1%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/InterioroceanConcentrationsofsilicate,phosphate,nitrate>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean Concentrations of silicate, phosphate, nitrate" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean Concentrations of silicate, phosphate, nitrate" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Nutrients> ;
+        schema:frequency          "decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "PO4: ±0.05 (μM); NO3: ±0.03 (μM); Si: ±0.1 (μM)" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/WaterLeavingRadiance>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Water Leaving Radiance" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Water Leaving Radiance" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/OceanColour> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "4 km" ;
+        base:requiredUncertainty  "5% (blue & green wavelengths)" ;
+        base:stability            "0,50%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Chlorophyll-aConcentration>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Chlorophyll-a Concentration" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Chlorophyll-a Concentration" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/OceanColour> ;
+        schema:frequency          "Weekly averages" ;
+        base:resolution           "4 km" ;
+        base:requiredUncertainty  "30%" ;
+        base:stability            "3%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/InterioroceanOxygenconcentration>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean Oxygen concentration" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean Oxygen concentration" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Oxygen> ;
+        schema:frequency          "Weekly to Decadal" ;
+        base:resolution           "3-20° degrees" ;
+        base:requiredUncertainty  "0.5 uM - 2 uM" ;
+        base:relatedStandard      "See EOV specification sheets at www.ioc-goos-oopc/obs/ecv.php" ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/InterioroceanCFC-12>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean CFC-12" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean CFC-12" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/TransientTracers> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "±1%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/InterioroceanCFC-11>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean CFC-11" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean CFC-11" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/TransientTracers> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "±1%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/InterioroceanSF6>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean SF6" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean SF6" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/TransientTracers> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "±1%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Interioroceantritium>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean tritium " ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean tritium " ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/TransientTracers> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "±0.5%, 0.005 TU" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Interiorocean3He>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean 3He" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean 3He" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/TransientTracers> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "δ3He ±0.15%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Interiorocean14C>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean 14C" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean 14C" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/TransientTracers> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "14C ±0.4%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Interiorocean39Ar>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Interior ocean  39Ar" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Interior ocean  39Ar" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/TransientTracers> ;
+        schema:frequency          "Annual to decadal " ;
+        base:resolution           "Every 20°" ;
+        base:requiredUncertainty  "14C ±0.4%" ;
+        base:relatedStandard      "See http://www.ioccp.org/index.php/foo " ;
+        base:inSitu               "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/CoralReefs,>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Coral Reefs," ;
+        rdfs:isDefinedBy  <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Coral Reefs," ;
+        skos:broader      <https://w3id.org/ad4gd/ev/ecv/MarineHabitatProperties> ;
+        schema:frequency  "Requirements under assessment by GOOS Biology Panel" ;
+        base:inSitu       "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/MangroveForests,SeagrassBeds,MacroalgalCommunities>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Mangrove Forests, Seagrass Beds, Macroalgal Communities" ;
+        rdfs:isDefinedBy  <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Mangrove Forests, Seagrass Beds, Macroalgal Communities" ;
+        skos:broader      <https://w3id.org/ad4gd/ev/ecv/MarineHabitatProperties> ;
+        schema:frequency  "Requirements under assessment by GOOS Biology Panel" ;
+        base:satellite    "TBD" ;
+        base:inSitu       "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Phytoplankton>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Phytoplankton" ;
+        rdfs:isDefinedBy  <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Phytoplankton" ;
+        skos:broader      <https://w3id.org/ad4gd/ev/ecv/Plankton> ;
+        base:inSitu       "GOOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Zooplankton>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Zoo plankton" ;
+        rdfs:isDefinedBy  <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Zoo plankton" ;
+        skos:broader      <https://w3id.org/ad4gd/ev/ecv/Plankton> ;
+        base:inSitu       "GOOS" .

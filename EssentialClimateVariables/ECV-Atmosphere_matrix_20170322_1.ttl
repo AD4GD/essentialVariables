@@ -1,0 +1,898 @@
+@prefix schema:  <https://schema.org/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix base:  <https://w3id.org/ad4gd/ev/> .
+
+base:ecv  rdf:type          skos:ConceptScheme ;
+        rdf:type            dcat:Dataset ;
+        dct:description     "Essential Climate Variables (ECVs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        dct:identifier      "ECV"^^rdfs:Literal ;
+        dct:title           "Essential Climate Variables - codelist scheme"@en ;
+        rdfs:isDefinedBy    <https://gcos.wmo.int/en/essential-climate-variables/> ;
+        skos:definition     "Essential Climate Variables (ECVs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        skos:prefLabel      "Essential Climate Variables - codelist scheme"@en ;
+        dcat:theme          <http://w3id.org/ad4gd/ev/> ;
+        rdfs:seeAlso        base:ECV ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/Surface> ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/UpperAtmosphere> ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/AtmosphericComposition> .
+
+base:ECV  rdf:type        owl:Class ;
+        rdfs:subClassOf   skos:Concept ;
+        rdfs:label        "Essential Climate Variables - codelist class"@en ;
+        rdfs:comment      "Essential Climate Variables (ecvs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/> ;
+        rdfs:seeAlso      base:ecv .
+
+<https://w3id.org/ad4gd/ev/ecv/Surface>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Surface" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Surface" .
+
+<https://w3id.org/ad4gd/ev/ecv/UpperAtmosphere>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Upper Atmosphere" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Upper Atmosphere" .
+
+<https://w3id.org/ad4gd/ev/ecv/AtmosphericComposition>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Atmospheric Composition" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Atmospheric Composition" .
+
+<https://w3id.org/ad4gd/ev/ecv/Precipitation>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Precipitation " ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Precipitation " .
+
+<https://w3id.org/ad4gd/ev/ecv/Pressure(surface)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Pressure (surface)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Pressure (surface)" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceRadiationBudget>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Surface Radiation Budget" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Surface Radiation Budget" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceWindSpeedanddirection>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Surface Wind Speed and direction" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Surface Wind Speed and direction" .
+
+<https://w3id.org/ad4gd/ev/ecv/Temperature(surface)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Temperature (surface)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Temperature (surface)" .
+
+<https://w3id.org/ad4gd/ev/ecv/WaterVapour(surface)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Water Vapour (surface)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Water Vapour (surface)" .
+
+<https://w3id.org/ad4gd/ev/ecv/EarthRadiationBudget>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Earth Radiation Budget" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Earth Radiation Budget" .
+
+<https://w3id.org/ad4gd/ev/ecv/Lightning>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Lightning" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Lightning" .
+
+<https://w3id.org/ad4gd/ev/ecv/Temperature(upper-air)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Temperature (upper-air)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Temperature (upper-air)" .
+
+<https://w3id.org/ad4gd/ev/ecv/WaterVapour(upperair)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Water Vapour (upper air)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Water Vapour (upper air)" .
+
+<https://w3id.org/ad4gd/ev/ecv/Windspeedanddirection(upper-air)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Wind speed and direction (upper-air)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Wind speed and direction (upper-air)" .
+
+<https://w3id.org/ad4gd/ev/ecv/Aerosolsproperties>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Aerosols properties" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Aerosols properties" .
+
+<https://w3id.org/ad4gd/ev/ecv/CarbonDioxide,MethaneandotherGreenhousegases>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Carbon Dioxide, Methane and other Greenhouse gases   " ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Carbon Dioxide, Methane and other Greenhouse gases   " .
+
+<https://w3id.org/ad4gd/ev/ecv/CloudProperties>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Cloud Properties" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Cloud Properties" .
+
+<https://w3id.org/ad4gd/ev/ecv/Ozone>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Ozone" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Ozone" .
+
+<https://w3id.org/ad4gd/ev/ecv/Precursors(supportingtheAerosolandOzoneECVs)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Precursors (supporting the Aerosol and Ozone ECVs)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Precursors (supporting the Aerosol and Ozone ECVs)" .
+
+<https://w3id.org/ad4gd/ev/ecv/Surface>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Precipitation> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Pressure(surface)> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SurfaceRadiationBudget> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SurfaceWindSpeedanddirection> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Temperature(surface)> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/WaterVapour(surface)> .
+
+<https://w3id.org/ad4gd/ev/ecv/UpperAtmosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/EarthRadiationBudget> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Lightning> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Temperature(upper-air)> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/WaterVapour(upperair)> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Windspeedanddirection(upper-air)> .
+
+<https://w3id.org/ad4gd/ev/ecv/AtmosphericComposition>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Aerosolsproperties> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/CarbonDioxide,MethaneandotherGreenhousegases> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/CloudProperties> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Ozone> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Precursors(supportingtheAerosolandOzoneECVs)> .
+
+base:ecv  owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Estimatesofliquidandsolidprecipitation> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Pressure> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SurfaceERBlongwave> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SurfaceERBshortwave> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Surfacewindspeedanddirection> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Temperature> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Dailymaximumandminimumtemperature> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Watervapour> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Top-of-atmosphereERBlongwave> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Top-of-atmosphereERBshortwave(reflected)> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Totalsolarirradiance> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Solarspectralirradiance> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Numberoflightnings> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/TroposphericTemperatureprofile> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/StratosphericTemperatureprofile> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Temperatureofdeepatmosphericlayers> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Totalcolumn-watervapour> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Troposphericprofilesofwatervapour> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Lower-stratosphericprofilesofwatervapour> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Uppertropospherichumidity> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Upper-airwindretrievals> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Aerosolopticaldepth> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Single-scatteringalbedo> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Aerosol-layerheight> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Aerosol-extinctioncoeff.Profileneartropopause> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Aerosol-extinctioncoeff.Profilemidstratosphere> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/TroposphericCO2column> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/TroposphericCO2> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/TroposphericCH4column> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/TroposphericCH4> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/StratosphericCH4> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Cloudamount> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/CloudTopPressure> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/CloudTopTemperature> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/CloudOpticalDepth> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/CloudWaterPath(liquidanice)> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/C,effectiveparticleradius(liquid+ice)> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Totalcolumnozone> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/TroposphereOzone> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Ozoneprofileinupperandlowerstratosphere> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Ozoneprofileinupperstrato-andmesosphere> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/NO2troposphericcolumn> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SO2,HCHOtroposphericcolumns> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/COtroposphericcolumn> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/COtroposphericprofile> .
+
+<https://w3id.org/ad4gd/ev/ecv/Estimatesofliquidandsolidprecipitation>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Estimates of liquid and solid precipitation" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Estimates of liquid and solid precipitation" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Precipitation> ;
+        schema:frequency          "Monthly (resolving diurnal cycles and with statistics of 3 hr values)" ;
+        base:resolution           "25km/NA" ;
+        base:requiredUncertainty  "0.5 mm/h" ;
+        base:stability            "0.02mm/decade" ;
+        base:relatedStandard      "CMSAF requirements related to the HOAPS release 4.0 (CM-12611)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Pressure>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Pressure" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Pressure" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Pressure(surface)> ;
+        schema:frequency          "Hourly" ;
+        base:resolution           "Site" ;
+        base:requiredUncertainty  "0.1hPa" ;
+        base:stability            "0.02hPa/decade" ;
+        base:relatedStandard      "P.Jones" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceERBlongwave>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Surface ERB longwave" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Surface ERB longwave" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SurfaceRadiationBudget> ;
+        schema:frequency          "Monthly(resolving diurnal cycle)" ;
+        base:resolution           "100km/NA" ;
+        base:requiredUncertainty  "Requirements on global mean: 1W/m2" ;
+        base:stability            "0.2W/m2 /decade" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceERBshortwave>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Surface ERB shortwave" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Surface ERB shortwave" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SurfaceRadiationBudget> ;
+        schema:frequency          "Monthly(resolving diurnal cycle)" ;
+        base:resolution           "100km/NA" ;
+        base:requiredUncertainty  "Requirements on global mean: 1W/m2" ;
+        base:stability            "0.2W/m2 /decade" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Surfacewindspeedanddirection>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Surface wind speed and direction" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Surface wind speed and direction" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SurfaceWindSpeedanddirection> ;
+        schema:frequency          "3 hr" ;
+        base:resolution           "10km/NA" ;
+        base:requiredUncertainty  "0.5m/s and mean quadratic statistics to 10% of the locally prevailing mean wind speed, for speed >20m/s" ;
+        base:stability            "0.05m/s/decade" ;
+        base:relatedStandard      "For stability: International Vector Winds Science Team Meeting (M.Bourassa)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Temperature>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Temperature " ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Temperature " ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Temperature(surface)> ;
+        schema:frequency          "Hourly" ;
+        base:resolution           "Site" ;
+        base:requiredUncertainty  "0.1K" ;
+        base:stability            "0.02K/decade" ;
+        base:relatedStandard      "P.Jones" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Dailymaximumandminimumtemperature>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Daily maximum and minimum temperature" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Daily maximum and minimum temperature" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Temperature(surface)> ;
+        schema:frequency          "Daily Tx/Tn" ;
+        base:resolution           "Site" ;
+        base:requiredUncertainty  "0.1K" ;
+        base:stability            "0.02K/decade" ;
+        base:relatedStandard      "P.Jones" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Watervapour>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Water vapour" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Water vapour" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/WaterVapour(surface)> ;
+        schema:frequency          "Hourly" ;
+        base:resolution           "Site" ;
+        base:requiredUncertainty  "RH 1%; DP 0.1K" ;
+        base:stability            "0.5%/decade; 0.02hPA/decade" ;
+        base:relatedStandard      "Kate Willet" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Top-of-atmosphereERBlongwave>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Top-of-atmosphere ERB longwave" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Top-of-atmosphere ERB longwave" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/EarthRadiationBudget> ;
+        schema:frequency          "Monthly(resolving diurnal cycle)" ;
+        base:resolution           "100km/NA" ;
+        base:requiredUncertainty  "Requirements on global mean: 1W/m2" ;
+        base:stability            "0.2 W/m2/decade" ;
+        base:relatedStandard      "NOAA Tech Rep. NESDIS 134" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Top-of-atmosphereERBshortwave(reflected)>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Top-of-atmosphere ERB shortwave (reflected)" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Top-of-atmosphere ERB shortwave (reflected)" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/EarthRadiationBudget> ;
+        schema:frequency          "Monthly(resolving diurnal cycle)" ;
+        base:resolution           "100km/NA" ;
+        base:requiredUncertainty  "Requirements on global mean: 1.0 W/m2" ;
+        base:stability            "0.3W/m2 /decade" ;
+        base:relatedStandard      "NOAA Tech Rep. NESDIS 134" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Totalsolarirradiance>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Total solar irradiance" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Total solar irradiance" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/EarthRadiationBudget> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "NA/NA" ;
+        base:requiredUncertainty  "0,04%" ;
+        base:stability            "0.01%/decade" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Solarspectralirradiance>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Solar spectral irradiance" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Solar spectral irradiance" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/EarthRadiationBudget> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "Spectral resolution: 1 nm < 290 nm; 2 nm 290-1000 nm; 5 nm 1000-1600 nm; 10 nm 1600-3200 nm; 20 nm 3200-6400 nm; 40 nm 6400-10020  20000 nm spacing up to 160000 nm" ;
+        base:requiredUncertainty  "0.3%(200-2400nm)" ;
+        base:stability            "1%(200-2400nm)/decade" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Numberoflightnings>
+        rdf:type              skos:Concept ;
+        rdf:type              base:ecv ;
+        dct:identifier        "Number of lightnings" ;
+        rdfs:isDefinedBy      <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme         base:ecv ;
+        skos:prefLabel        "Number of lightnings" ;
+        skos:broader          <https://w3id.org/ad4gd/ev/ecv/Lightning> ;
+        schema:frequency      "1 day" ;
+        base:resolution       "10km" ;
+        base:relatedStandard  "MTG EURD[1]" ;
+        base:satellite        "WGClimate" ;
+        base:inSitu           "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/TroposphericTemperatureprofile>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Tropospheric Temperature profile" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Tropospheric Temperature profile" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Temperature(upper-air)> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "25km/1km" ;
+        base:requiredUncertainty  "0.5K" ;
+        base:stability            "0.05K" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/StratosphericTemperatureprofile>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Stratospheric Temperature profile" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Stratospheric Temperature profile" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Temperature(upper-air)> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "100km/2km" ;
+        base:requiredUncertainty  "0.5K" ;
+        base:stability            "0.05K" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Temperatureofdeepatmosphericlayers>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Temperature of deep atmospheric layers" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Temperature of deep atmospheric layers" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Temperature(upper-air)> ;
+        schema:frequency          "Monthly averages" ;
+        base:resolution           "100km/5km" ;
+        base:requiredUncertainty  "0.2K" ;
+        base:stability            "0.02K" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Totalcolumn-watervapour>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Total column-water vapour" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Total column-water vapour" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/WaterVapour(upperair)> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "25km/NA" ;
+        base:requiredUncertainty  "2%" ;
+        base:stability            "0,30%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Troposphericprofilesofwatervapour>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Tropospheric profiles of water vapour" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Tropospheric profiles of water vapour" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/WaterVapour(upperair)> ;
+        schema:frequency          "4hr (troposphere)" ;
+        base:resolution           "25km/2km" ;
+        base:requiredUncertainty  "5%" ;
+        base:stability            "0,30%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Lower-stratosphericprofilesofwatervapour>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Lower-stratospheric profiles of water vapour" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Lower-stratospheric profiles of water vapour" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/WaterVapour(upperair)> ;
+        schema:frequency          "daily (stratosphere)" ;
+        base:resolution           "100-200km/2km" ;
+        base:requiredUncertainty  "5%" ;
+        base:stability            "0,30%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Uppertropospherichumidity>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Upper tropospheric humidity" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Upper tropospheric humidity" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/WaterVapour(upperair)> ;
+        schema:frequency          "1hr" ;
+        base:resolution           "25km/NA" ;
+        base:requiredUncertainty  "5%" ;
+        base:stability            "0,30%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Upper-airwindretrievals>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Upper-air wind retrievals" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Upper-air wind retrievals" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Windspeedanddirection(upper-air)> ;
+        schema:frequency          "1hr" ;
+        base:resolution           "10km/0.5km" ;
+        base:requiredUncertainty  "2m/s,20deg;" ;
+        base:stability            "0.5m/s,5deg" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "WIGOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Aerosolopticaldepth>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Aerosol optical depth" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Aerosol optical depth" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Aerosolsproperties> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/NA/" ;
+        base:requiredUncertainty  "Max(0.03;10%)" ;
+        base:stability            "0.02/decade" ;
+        base:relatedStandard      "ESA CCI CMUG tables (http://www.esa-cmug-cci.org/)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Single-scatteringalbedo>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Single-scattering albedo" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Single-scattering albedo" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Aerosolsproperties> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/NA/" ;
+        base:requiredUncertainty  "0,03" ;
+        base:stability            "0,01" .
+
+<https://w3id.org/ad4gd/ev/ecv/Aerosol-layerheight>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Aerosol-layer height" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Aerosol-layer height" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Aerosolsproperties> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/NA/" ;
+        base:requiredUncertainty  "1km" ;
+        base:stability            "0.5km" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Aerosol-extinctioncoeff.Profileneartropopause>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Aerosol-extinction coeff. Profile near tropopause" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Aerosol-extinction coeff. Profile near tropopause" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Aerosolsproperties> ;
+        schema:frequency          "weekly" ;
+        base:resolution           "200-500 km/ 1km" ;
+        base:requiredUncertainty  "10%" ;
+        base:stability            "20%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Aerosol-extinctioncoeff.Profilemidstratosphere>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Aerosol-extinction coeff. Profile mid stratosphere" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Aerosol-extinction coeff. Profile mid stratosphere" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Aerosolsproperties> ;
+        schema:frequency          "weekly" ;
+        base:resolution           "2km" ;
+        base:requiredUncertainty  "10%" ;
+        base:stability            "20%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/TroposphericCO2column>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Tropospheric CO2 column" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Tropospheric CO2 column" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CarbonDioxide,MethaneandotherGreenhousegases> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/NA" ;
+        base:requiredUncertainty  "1ppm" ;
+        base:stability            "1.5ppm/decade" ;
+        base:relatedStandard      "ESA CCI CMUG tables (http://www.esa-cmug-cci.org/)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/TroposphericCO2>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Tropospheric CO2" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Tropospheric CO2" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CarbonDioxide,MethaneandotherGreenhousegases> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/5km" ;
+        base:requiredUncertainty  "1ppm" ;
+        base:stability            "1.5ppm" ;
+        base:inSitu               "GAW" .
+
+<https://w3id.org/ad4gd/ev/ecv/TroposphericCH4column>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Tropospheric CH4 column" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Tropospheric CH4 column" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CarbonDioxide,MethaneandotherGreenhousegases> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/NA" ;
+        base:requiredUncertainty  "10ppb" ;
+        base:stability            "7ppb" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/TroposphericCH4>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Tropospheric  CH4" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Tropospheric  CH4" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CarbonDioxide,MethaneandotherGreenhousegases> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/5km" ;
+        base:requiredUncertainty  "0.5ppb" ;
+        base:stability            "0.7ppb" ;
+        base:inSitu               "GAW" .
+
+<https://w3id.org/ad4gd/ev/ecv/StratosphericCH4>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Stratospheric  CH4" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Stratospheric  CH4" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CarbonDioxide,MethaneandotherGreenhousegases> ;
+        schema:frequency          "daily" ;
+        base:resolution           "100-200km/2km" ;
+        base:requiredUncertainty  "5%" ;
+        base:stability            "0,30%" ;
+        base:inSitu               "GAW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Cloudamount>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Cloud amount" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Cloud amount" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CloudProperties> ;
+        schema:frequency          "3hr" ;
+        base:resolution           "50km/NA" ;
+        base:requiredUncertainty  "0.01-0.05" ;
+        base:stability            "0.01/decade" ;
+        base:relatedStandard      "ESA CCI CMUG tables (http://www.esa-cmug-cci.org/)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/CloudTopPressure>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Cloud Top Pressure" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Cloud Top Pressure" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CloudProperties> ;
+        schema:frequency          "3hr" ;
+        base:resolution           "50km/NA" ;
+        base:requiredUncertainty  "15-50hPa," ;
+        base:stability            "3-15hPa" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/CloudTopTemperature>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Cloud Top Temperature" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Cloud Top Temperature" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CloudProperties> ;
+        schema:frequency          "3hr" ;
+        base:resolution           "50km/NA" ;
+        base:requiredUncertainty  "1-5K;" ;
+        base:stability            "0.25K/decade" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/CloudOpticalDepth>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Cloud Optical Depth" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Cloud Optical Depth" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CloudProperties> ;
+        schema:frequency          "3hr" ;
+        base:resolution           "50km/NA" ;
+        base:requiredUncertainty  "10%" ;
+        base:stability            "2%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/CloudWaterPath(liquidanice)>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Cloud Water Path(liquid an ice)" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Cloud Water Path(liquid an ice)" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CloudProperties> ;
+        schema:frequency          "3hr" ;
+        base:resolution           "50km/NA" ;
+        base:requiredUncertainty  "25%;" ;
+        base:stability            "5%" .
+
+<https://w3id.org/ad4gd/ev/ecv/C,effectiveparticleradius(liquid+ice)>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "C, effective particle radius (liquid + ice)" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "C, effective particle radius (liquid + ice)" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/CloudProperties> ;
+        schema:frequency          "3hr" ;
+        base:resolution           "50km/NA" ;
+        base:requiredUncertainty  "1um;" ;
+        base:stability            "1um/decade" .
+
+<https://w3id.org/ad4gd/ev/ecv/Totalcolumnozone>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Total column ozone" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Total column ozone" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Ozone> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "20-50km/NA" ;
+        base:requiredUncertainty  "Max(2%;5DU)" ;
+        base:stability            "1%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/TroposphereOzone>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Troposphere Ozone" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Troposphere Ozone" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Ozone> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "20-50km/5km" ;
+        base:requiredUncertainty  "10-15%" ;
+        base:stability            "2%" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GAW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Ozoneprofileinupperandlowerstratosphere>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Ozone profile in upper and lower stratosphere" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Ozone profile in upper and lower stratosphere" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Ozone> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "100-200km/1-2km" ;
+        base:requiredUncertainty  "10%" ;
+        base:stability            "2%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Ozoneprofileinupperstrato-andmesosphere>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Ozone profile in upper strato-and mesosphere" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Ozone profile in upper strato-and mesosphere" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Ozone> ;
+        schema:frequency          "daily" ;
+        base:resolution           "100-200km/3km/" ;
+        base:requiredUncertainty  "5-20%" ;
+        base:stability            "2%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/NO2troposphericcolumn>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "NO2 tropospheric column" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "NO2 tropospheric column" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Precursors(supportingtheAerosolandOzoneECVs)> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/NA" ;
+        base:requiredUncertainty  "Max(20%,0.03DU)" ;
+        base:stability            "2%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/SO2,HCHOtroposphericcolumns>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "SO2,HCHO tropospheric columns" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "SO2,HCHO tropospheric columns" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Precursors(supportingtheAerosolandOzoneECVs)> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/NA" ;
+        base:requiredUncertainty  "Max(30%,0.04DU)" ;
+        base:stability            "5%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/COtroposphericcolumn>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "CO tropospheric column" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "CO tropospheric column" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Precursors(supportingtheAerosolandOzoneECVs)> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "5-10km/NA" ;
+        base:requiredUncertainty  "Max(20%,20DU);" ;
+        base:stability            "2%" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/COtroposphericprofile>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "CO tropospheric profile" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "CO tropospheric profile" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Precursors(supportingtheAerosolandOzoneECVs)> ;
+        schema:frequency          "4hr" ;
+        base:resolution           "10km/5km" ;
+        base:requiredUncertainty  "20%;" ;
+        base:stability            "2%" ;
+        base:satellite            "WGClimate" .

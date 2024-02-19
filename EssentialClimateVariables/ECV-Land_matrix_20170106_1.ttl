@@ -1,0 +1,1113 @@
+@prefix schema:  <https://schema.org/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix base:  <https://w3id.org/ad4gd/ev/> .
+
+base:ecv  rdf:type          skos:ConceptScheme ;
+        rdf:type            dcat:Dataset ;
+        dct:description     "Essential Climate Variables (ECVs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        dct:identifier      "ECV"^^rdfs:Literal ;
+        dct:title           "Essential Climate Variables - codelist scheme"@en ;
+        rdfs:isDefinedBy    <https://gcos.wmo.int/en/essential-climate-variables/> ;
+        skos:definition     "Essential Climate Variables (ECVs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        skos:prefLabel      "Essential Climate Variables - codelist scheme"@en ;
+        dcat:theme          <http://w3id.org/ad4gd/ev/> ;
+        rdfs:seeAlso        base:ECV ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/Biosphere> ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/Anthroposphere> ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/Cryosphere> ;
+        skos:hasTopConcept  <https://w3id.org/ad4gd/ev/ecv/Hydrosphere> .
+
+base:ECV  rdf:type        owl:Class ;
+        rdfs:subClassOf   skos:Concept ;
+        rdfs:label        "Essential Climate Variables - codelist class"@en ;
+        rdfs:comment      "Essential Climate Variables (ecvs) are defined as physical, chemical or biological variables or groups of linked variables that critically contributes to the characterization of Earth’ s climate. They are classified in three mean areas: Atmosphere, Land and Ocean"@en ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/> ;
+        rdfs:seeAlso      base:ecv .
+
+<https://w3id.org/ad4gd/ev/ecv/Biosphere>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Biosphere" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Biosphere" .
+
+<https://w3id.org/ad4gd/ev/ecv/Anthroposphere>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Anthroposphere" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Anthroposphere" .
+
+<https://w3id.org/ad4gd/ev/ecv/Cryosphere>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Cryosphere" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Cryosphere" .
+
+<https://w3id.org/ad4gd/ev/ecv/Hydrosphere>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Hydrosphere" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Hydrosphere" .
+
+<https://w3id.org/ad4gd/ev/ecv/Above-groundbiomass>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Above-ground biomass" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Above-ground biomass" .
+
+<https://w3id.org/ad4gd/ev/ecv/Albedo>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Albedo" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Albedo" .
+
+<https://w3id.org/ad4gd/ev/ecv/AnthropogenicGreenhouseGasFluxes>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Anthropogenic Greenhouse Gas Fluxes" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Anthropogenic Greenhouse Gas Fluxes" .
+
+<https://w3id.org/ad4gd/ev/ecv/AnthropogenicWaterUse>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Anthropogenic Water Use" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Anthropogenic Water Use" .
+
+<https://w3id.org/ad4gd/ev/ecv/Fire>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Fire " ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Fire " .
+
+<https://w3id.org/ad4gd/ev/ecv/FractionofAbsorbedPhotosyntheticallyActiveRadiation(FAPAR)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Fraction of Absorbed Photosynthetically Active Radiation (FAPAR)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Fraction of Absorbed Photosynthetically Active Radiation (FAPAR)" .
+
+<https://w3id.org/ad4gd/ev/ecv/Glaciers>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Glaciers" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Glaciers" .
+
+<https://w3id.org/ad4gd/ev/ecv/Groundwater>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Groundwater" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Groundwater" .
+
+<https://w3id.org/ad4gd/ev/ecv/IceSheetsandiceshelves>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Ice Sheets and ice shelves" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Ice Sheets and ice shelves" .
+
+<https://w3id.org/ad4gd/ev/ecv/Lakes>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Lakes" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Lakes" .
+
+<https://w3id.org/ad4gd/ev/ecv/Landcover>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Land cover" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Land cover" .
+
+<https://w3id.org/ad4gd/ev/ecv/LandSurfaceTemperature>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Land Surface Temperature" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Land Surface Temperature" .
+
+<https://w3id.org/ad4gd/ev/ecv/LeafAreaIndex(LAI)>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Leaf Area Index (LAI)" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Leaf Area Index (LAI)" .
+
+<https://w3id.org/ad4gd/ev/ecv/Permafrost>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Permafrost" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Permafrost" .
+
+<https://w3id.org/ad4gd/ev/ecv/RiverDischarge>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "River Discharge" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "River Discharge" .
+
+<https://w3id.org/ad4gd/ev/ecv/Snow>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Snow " ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Snow " .
+
+<https://w3id.org/ad4gd/ev/ecv/SoilCarbon>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Soil Carbon" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Soil Carbon" .
+
+<https://w3id.org/ad4gd/ev/ecv/SoilMoisture>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Soil Moisture" ;
+        rdfs:isDefinedBy  <https://gcos.wmo.int/en/essential-climate-variables/table> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Soil Moisture" .
+
+<https://w3id.org/ad4gd/ev/ecv/Biosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Above-groundbiomass> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Albedo> .
+
+<https://w3id.org/ad4gd/ev/ecv/Anthroposphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/AnthropogenicGreenhouseGasFluxes> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/AnthropogenicWaterUse> .
+
+<https://w3id.org/ad4gd/ev/ecv/Biosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Fire> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/FractionofAbsorbedPhotosyntheticallyActiveRadiation(FAPAR)> .
+
+<https://w3id.org/ad4gd/ev/ecv/Cryosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Glaciers> .
+
+<https://w3id.org/ad4gd/ev/ecv/Hydrosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Groundwater> .
+
+<https://w3id.org/ad4gd/ev/ecv/Cryosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/IceSheetsandiceshelves> .
+
+<https://w3id.org/ad4gd/ev/ecv/Hydrosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Lakes> .
+
+<https://w3id.org/ad4gd/ev/ecv/Biosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Landcover> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/LandSurfaceTemperature> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/LeafAreaIndex(LAI)> .
+
+<https://w3id.org/ad4gd/ev/ecv/Cryosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Permafrost> .
+
+<https://w3id.org/ad4gd/ev/ecv/Hydrosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/RiverDischarge> .
+
+<https://w3id.org/ad4gd/ev/ecv/Cryosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/Snow> .
+
+<https://w3id.org/ad4gd/ev/ecv/Biosphere>
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SoilCarbon> ;
+        skos:narrower  <https://w3id.org/ad4gd/ev/ecv/SoilMoisture> .
+
+base:ecv  owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/MapsofAGB> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/MapsofDHRalbedoforadaptation> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/MapsofBHRalbedoforadaptation> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/MapsofDHRalbedoformodelling> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/MapsofBHRalbedoformodelling> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Emissionsfromfossilfueluse,industry,agricultureandwastesectors.> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Emissions/removalsbyIPCClandcategories> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Estimatedfluxesbyinversionsofobservedatmosphericcomposition-continental> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Estimatedfluxesbyinversionsofobservedatmosphericcomposition-national> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Hi-resCO2columnconcentrationstomonitorpointsources> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Volumeofwaterperyear> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/BurntAreas> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Activefiremaps> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Fireradiativepower> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/mapsofFAPARformodelling> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/mapsofFAPARforadaptation> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Glacierarea> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Glacierelevationchange> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Glaciermasschange> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Groundwatervolumechange> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Groundwaterlevel> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Groundwaterrecharge> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Groundwaterdischarge> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Wellheadlevel> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Waterquality> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/SurfaceElevationChange> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Icevelocity> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Icemasschange> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Groundinglinelocationandthickness> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Lakewaterlevel> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/WaterExtent> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Lakesurfacewatertemperature> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Lakeicethickness> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/LakeIceCover> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/LakeColour(LakeWaterLeavingReflectance)> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Mapsoflandcover> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Mapsofhighresolutionlandcover> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/MapsofkeyIPCClanduse,relatedchangesandlandmanagementtypes> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Mapsoflandsurfacetemperature> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/mapsofLAIformodelling> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/mapsofLAIforadaptation> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/ThermalStateofPermafrost> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/ActiveLayerThickness> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Riverdischarge> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/WaterLevel> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/FlowVelocity> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Cross-section> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Areacoveredbysnow> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/snowdepth> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/snowwaterequivalent> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Carboninsoil> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Mineralsoilbulkdensityto30cmsand1m> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Peatlandstotaldepthofprofile,areaandlocation> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Surfacesoilmoisture> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Freeze/thaw> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Surfaceinundation> ;
+        owl:oneOf  <https://w3id.org/ad4gd/ev/ecv/Root-zonesoilmoisture> .
+
+<https://w3id.org/ad4gd/ev/ecv/MapsofAGB>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of AGB" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of AGB" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Above-groundbiomass> ;
+        schema:frequency          "Annual" ;
+        base:resolution           "500m-1km (based on satellite  observations of 100-200m)" ;
+        base:requiredUncertainty  "< 20% error for biomass values > 50 t/ha, and 10 t/ha for biomass values ≤ 50 t/ha" ;
+        base:stability            "10%" ;
+        base:relatedStandard      "No agreed standards but see: GOFC-GOLD (2015b); GFOI (2013)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/MapsofDHRalbedoforadaptation>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of DHR albedo for adaptation" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of DHR albedo for adaptation" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Albedo> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "50m" ;
+        base:requiredUncertainty  "max(5%; 0.0025)" ;
+        base:stability            "max(1%; 0.001)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "BSRN" .
+
+<https://w3id.org/ad4gd/ev/ecv/MapsofBHRalbedoforadaptation>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of BHR albedo for adaptation" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of BHR albedo for adaptation" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Albedo> ;
+        base:resolution           "50m" ;
+        base:requiredUncertainty  "max(5%; 0.0025)" ;
+        base:stability            "max(1%; 0.001)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "BSRN" .
+
+<https://w3id.org/ad4gd/ev/ecv/MapsofDHRalbedoformodelling>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of DHR albedo for modelling" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of DHR albedo for modelling" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Albedo> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "200/500m" ;
+        base:requiredUncertainty  "max(5%; 0.0025)" ;
+        base:stability            "max(1%; 0.001)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/MapsofBHRalbedoformodelling>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of BHR albedo for modelling" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of BHR albedo for modelling" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Albedo> ;
+        base:resolution           "200/500m" ;
+        base:requiredUncertainty  "max(5%; 0.0025)" ;
+        base:stability            "max(1%; 0.001)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Emissionsfromfossilfueluse,industry,agricultureandwastesectors.>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Emissions from fossil fuel use, industry, agriculture and waste sectors." ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Emissions from fossil fuel use, industry, agriculture and waste sectors." ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/AnthropogenicGreenhouseGasFluxes> ;
+        schema:frequency          "Annual" ;
+        base:resolution           "By country and sector" ;
+        base:requiredUncertainty  "Globally 5%; Nationally 10%" ;
+        base:relatedStandard      "IPCC (2006); IPCC (2013)" ;
+        base:inSitu               "TBD[2]" .
+
+<https://w3id.org/ad4gd/ev/ecv/Emissions/removalsbyIPCClandcategories>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Emissions/ removals by IPCC land categories" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Emissions/ removals by IPCC land categories" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/AnthropogenicGreenhouseGasFluxes> ;
+        schema:frequency          "Annual" ;
+        base:resolution           "By country/region" ;
+        base:requiredUncertainty  "Globally 15%; Nationally 20%" ;
+        base:inSitu               "TBD[2]" .
+
+<https://w3id.org/ad4gd/ev/ecv/Estimatedfluxesbyinversionsofobservedatmosphericcomposition-continental>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Estimated fluxes by inversions of observed atmospheric composition - continental" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Estimated fluxes by inversions of observed atmospheric composition - continental" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/AnthropogenicGreenhouseGasFluxes> ;
+        schema:frequency          "Annual" ;
+        base:resolution           "1000 - 10,000 km" ;
+        base:requiredUncertainty  "10%" ;
+        base:relatedStandard      "Maps for modelling and adaptation" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "TBD[2]" .
+
+<https://w3id.org/ad4gd/ev/ecv/Estimatedfluxesbyinversionsofobservedatmosphericcomposition-national>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Estimated fluxes by inversions of observed atmospheric composition - national" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Estimated fluxes by inversions of observed atmospheric composition - national" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/AnthropogenicGreenhouseGasFluxes> ;
+        schema:frequency          "Annual" ;
+        base:resolution           "100-1000 km" ;
+        base:requiredUncertainty  "30%" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "TBD[2]" .
+
+<https://w3id.org/ad4gd/ev/ecv/Hi-resCO2columnconcentrationstomonitorpointsources>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Hi-res CO2 column concentrations to monitor point sources" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Hi-res CO2 column concentrations to monitor point sources" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/AnthropogenicGreenhouseGasFluxes> ;
+        schema:frequency          "4 hourly" ;
+        base:resolution           "1 km" ;
+        base:requiredUncertainty  "1ppm" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "TBD[2]" .
+
+<https://w3id.org/ad4gd/ev/ecv/Volumeofwaterperyear>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Volume of water per year" ;
+        rdfs:isDefinedBy  <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Volume of water per year" ;
+        skos:broader      <https://w3id.org/ad4gd/ev/ecv/AnthropogenicWaterUse> ;
+        schema:frequency  "Annual" ;
+        base:resolution   "100 km" ;
+        base:inSitu       "AQUASTAT" .
+
+<https://w3id.org/ad4gd/ev/ecv/BurntAreas>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Burnt Areas" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Burnt Areas" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Fire> ;
+        schema:frequency          "24 hours" ;
+        base:resolution           "30m" ;
+        base:requiredUncertainty  "15% (error of omission and commission), compared to 30 m observations" ;
+        base:relatedStandard      " None" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Activefiremaps>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Active fire maps " ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Active fire maps " ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Fire> ;
+        schema:frequency          "6 hours at all latitudes from Polar-Orbiting and 1 hour from Geostationary" ;
+        base:resolution           "0.25-1 km (Polar); 1-3 km (Geo)" ;
+        base:requiredUncertainty  "5% error of commission; 10% error of omission; Based on per-fire comparisons for fires above  target  threshold of  5 MW/km² equivalent integrated FRP per pixel (i.e. for a 0.5 km² pixel the target threshold would be 2.5 MW, for a 9 km² pixel it would be 45 MW)." ;
+        base:relatedStandard      " None" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Fireradiativepower>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Fire radiative power" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Fire radiative power" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Fire> ;
+        schema:frequency          "6 hours at all latitudes from Polar-Orbiting and 1 hour from Geostationary" ;
+        base:resolution           "0.25-1 km (Polar); 1-3 km (Geo)" ;
+        base:requiredUncertainty  "10% integrated over pixel. Based on target detection threshold of  5 MW/km² equivalent integrated FRP per pixel (i.e. for a 0.5 km² pixel the target threshold would be 2.5 MW, for a 9 km² pixel it would be 45 MW).and with the same detection accuracy as the Active Fire Maps." ;
+        base:relatedStandard      " None" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/mapsofFAPARformodelling>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "maps of FAPAR for modelling" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "maps of FAPAR for modelling" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/FractionofAbsorbedPhotosyntheticallyActiveRadiation(FAPAR)> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "200/500 m" ;
+        base:requiredUncertainty  "max(10%; 0.05)" ;
+        base:stability            "max(3%; 0.02)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/mapsofFAPARforadaptation>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "maps of FAPAR for adaptation" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "maps of FAPAR for adaptation" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/FractionofAbsorbedPhotosyntheticallyActiveRadiation(FAPAR)> ;
+        base:resolution           "50m" ;
+        base:requiredUncertainty  "max(10%; 0.05)" ;
+        base:stability            "max(3%; 0.02)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/Glacierarea>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Glacier area" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Glacier area" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Glaciers> ;
+        schema:frequency          "Annual (at end of ablation season)" ;
+        base:resolution           "Horizontal 15-30m; Vertical 1m" ;
+        base:requiredUncertainty  "5%" ;
+        base:relatedStandard      "IGOS (2009); Paul et al. (2009)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Glacierelevationchange>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Glacier elevation change" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Glacier elevation change" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Glaciers> ;
+        schema:frequency          "Decadal" ;
+        base:resolution           "Horizontal 30m-100mx; Vertical 1m" ;
+        base:requiredUncertainty  "2m/decade" ;
+        base:stability            "1m/decade" ;
+        base:relatedStandard      "Zemp et al. (2013)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Glaciermasschange>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Glacier mass change" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Glacier mass change" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Glaciers> ;
+        schema:frequency          "seasonal to annual (the latter at end of ablation period)" ;
+        base:resolution           "Vertical: 0.01m or 10kg/m2 (at point location)" ;
+        base:requiredUncertainty  "better than  200kg/m2/year  (glacier-wide)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Groundwatervolumechange>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Groundwater volume change" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Groundwater volume change" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Groundwater> ;
+        schema:frequency          "Monthly" ;
+        base:resolution           "100 km" ;
+        base:requiredUncertainty  "10 cm" ;
+        base:stability            "tbd" ;
+        base:relatedStandard      "ISO/TC 147" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Groundwaterlevel>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Groundwater level" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Groundwater level" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Groundwater> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "Per well" ;
+        base:requiredUncertainty  "1 cm" ;
+        base:relatedStandard      "ISO 5667-18:2001 part 18" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Groundwaterrecharge>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Groundwater recharge" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Groundwater recharge" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Groundwater> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "Per well" ;
+        base:requiredUncertainty  "10 % (relative)" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Groundwaterdischarge>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Groundwater discharge" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Groundwater discharge" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Groundwater> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "Per well" ;
+        base:requiredUncertainty  "10 % (relative)" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Wellheadlevel>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Wellhead level" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Wellhead level" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Groundwater> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "Per well" ;
+        base:requiredUncertainty  "1 cm" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Waterquality>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Water quality" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Water quality" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Groundwater> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "Per well" ;
+        base:requiredUncertainty  "tbd" ;
+        base:inSitu               "TBD" .
+
+<https://w3id.org/ad4gd/ev/ecv/SurfaceElevationChange>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Surface Elevation Change" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Surface Elevation Change" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/IceSheetsandiceshelves> ;
+        schema:frequency          "30 days" ;
+        base:resolution           "Horizontal 100m" ;
+        base:requiredUncertainty  "0.1m/year" ;
+        base:stability            "0.1m/year" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Icevelocity>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Ice velocity" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Ice velocity" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/IceSheetsandiceshelves> ;
+        schema:frequency          "30 days" ;
+        base:resolution           "Horizontal 100m" ;
+        base:requiredUncertainty  "0.1m/year" ;
+        base:stability            "0.1m/year" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Icemasschange>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Ice mass change" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Ice mass change" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/IceSheetsandiceshelves> ;
+        schema:frequency          "30 days" ;
+        base:resolution           "Horizontal 50km" ;
+        base:requiredUncertainty  "10km3/year" ;
+        base:stability            "10km3/year" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Groundinglinelocationandthickness>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Grounding line location and thickness" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Grounding line location and thickness" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/IceSheetsandiceshelves> ;
+        schema:frequency          "Yearly" ;
+        base:resolution           "Horizontal 100 m; Vertical 10 m" ;
+        base:requiredUncertainty  "1 m" ;
+        base:stability            "10 m" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Lakewaterlevel>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Lake water level" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Lake water level" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Lakes> ;
+        schema:frequency          "Daily." ;
+        base:resolution           "100 m" ;
+        base:requiredUncertainty  "3 cm for large lakes; 10 cm for the remainder" ;
+        base:stability            "1 cm/decade" ;
+        base:relatedStandard      "WMO (2006, 2008a)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "HYDROLARE" .
+
+<https://w3id.org/ad4gd/ev/ecv/WaterExtent>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Water Extent" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Water Extent" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Lakes> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "20 m" ;
+        base:requiredUncertainty  "10 % (relative); 5% (for 70  largest lakes)" ;
+        base:stability            "5%/%/decade" ;
+        base:relatedStandard      "WMO (2006, 2008a)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "HYDROLARE" .
+
+<https://w3id.org/ad4gd/ev/ecv/Lakesurfacewatertemperature>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Lake surface water temperature" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Lake surface water temperature" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Lakes> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "300 m" ;
+        base:requiredUncertainty  "1 K" ;
+        base:stability            "0.1 K/decade" ;
+        base:relatedStandard      "WMO (2006, 2008a)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "HYDROLARE" .
+
+<https://w3id.org/ad4gd/ev/ecv/Lakeicethickness>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Lake ice thickness" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Lake ice thickness" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Lakes> ;
+        schema:frequency          "Monthly" ;
+        base:resolution           "100m" ;
+        base:requiredUncertainty  "1-2 cm" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "HYDROLARE" .
+
+<https://w3id.org/ad4gd/ev/ecv/LakeIceCover>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Lake Ice Cover" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Lake Ice Cover" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Lakes> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "300 m" ;
+        base:requiredUncertainty  "10%" ;
+        base:stability            "1 % /decade" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "HYDROLARE" .
+
+<https://w3id.org/ad4gd/ev/ecv/LakeColour(LakeWaterLeavingReflectance)>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Lake Colour (Lake Water Leaving Reflectance)" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Lake Colour (Lake Water Leaving Reflectance)" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Lakes> ;
+        schema:frequency          "Weekly" ;
+        base:resolution           "300 m" ;
+        base:requiredUncertainty  "30%" ;
+        base:stability            "1 %/decade" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "HYDROLARE" .
+
+<https://w3id.org/ad4gd/ev/ecv/Mapsoflandcover>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of land cover" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of land cover" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Landcover> ;
+        schema:frequency          "Annual" ;
+        base:resolution           "250m" ;
+        base:requiredUncertainty  "15% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV 250 m" ;
+        base:stability            "15% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV 250 m" ;
+        base:relatedStandard      "No agreed standards but see GLCN (2014) and GOFC-GOLD (2015a)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GOFC-GOLD" .
+
+<https://w3id.org/ad4gd/ev/ecv/Mapsofhighresolutionlandcover>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of high resolution land cover" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of high resolution land cover" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Landcover> ;
+        schema:frequency          "5 year" ;
+        base:resolution           "10 - 30m" ;
+        base:requiredUncertainty  "5% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV 10-30 m" ;
+        base:stability            "5% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV 10-30 m" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "GOFC-GOLD" .
+
+<https://w3id.org/ad4gd/ev/ecv/MapsofkeyIPCClanduse,relatedchangesandlandmanagementtypes>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of key IPCC land use, related changes and land management types" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of key IPCC land use, related changes and land management types" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Landcover> ;
+        schema:frequency          "1-10 years (incl. historical data)" ;
+        base:resolution           "10-1000 m (depending on time period)" ;
+        base:requiredUncertainty  "20% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV" ;
+        base:stability            "20% (maximum error of omission and commission in mapping individual classes), location accuracy better than 1/3 IFOV with target IFOV" ;
+        base:relatedStandard      "IPCC (2006)" ;
+        base:inSitu               "GOFC-GOLD" .
+
+<https://w3id.org/ad4gd/ev/ecv/Mapsoflandsurfacetemperature>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Maps of land surface temperature" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Maps of land surface temperature" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/LandSurfaceTemperature> ;
+        schema:frequency          "3 hour" ;
+        base:resolution           "1 km" ;
+        base:requiredUncertainty  "1K" ;
+        base:stability            "<0.1K/decade" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/mapsofLAIformodelling>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "maps of LAI for modelling" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "maps of LAI for modelling" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/LeafAreaIndex(LAI)> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "250m" ;
+        base:requiredUncertainty  "max(15%)" ;
+        base:stability            "max(10%; 0.25)" ;
+        base:satellite            "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/mapsofLAIforadaptation>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "maps of LAI for adaptation" ;
+        rdfs:isDefinedBy  <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "maps of LAI for adaptation" ;
+        skos:broader      <https://w3id.org/ad4gd/ev/ecv/LeafAreaIndex(LAI)> ;
+        base:resolution   "50m" ;
+        base:satellite    "WGClimate" .
+
+<https://w3id.org/ad4gd/ev/ecv/ThermalStateofPermafrost>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Thermal State of Permafrost " ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Thermal State of Permafrost " ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Permafrost> ;
+        schema:frequency          "Daily to weekly" ;
+        base:resolution           "Sufficient sites to characterise each bio-climate zone" ;
+        base:requiredUncertainty  "0.1K" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/ActiveLayerThickness>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Active Layer Thickness " ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Active Layer Thickness " ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Permafrost> ;
+        base:requiredUncertainty  "2cm" ;
+        base:inSitu               "GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Riverdischarge>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "River discharge" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "River discharge" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/RiverDischarge> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "Per river" ;
+        base:requiredUncertainty  "10 % (relative)" ;
+        base:relatedStandard      "ISO/TC 113: WMO (2010) WMO (2008a) WMO (2009)" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/WaterLevel>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Water Level" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Water Level" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/RiverDischarge> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "100m" ;
+        base:requiredUncertainty  "10 cm" ;
+        base:stability            "1 cm/yr" ;
+        base:relatedStandard      "ISO/TC 113: WMO (2010) WMO (2008a) WMO (2009)" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/FlowVelocity>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Flow Velocity" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Flow Velocity" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/RiverDischarge> ;
+        schema:frequency          "Few times per year for station calibration" ;
+        base:resolution           "Per river" ;
+        base:requiredUncertainty  "10 % (relative)" ;
+        base:relatedStandard      "ISO/TC 113: WMO (2010) WMO (2008a) WMO (2009)" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Cross-section>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Cross-section" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Cross-section" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/RiverDischarge> ;
+        schema:frequency          "Few times per year for station calibration" ;
+        base:resolution           "Per river" ;
+        base:requiredUncertainty  "10 % (relative)" ;
+        base:relatedStandard      "ISO/TC 113: WMO (2010) WMO (2008a) WMO (2009)" ;
+        base:inSitu               "WHYCOS" .
+
+<https://w3id.org/ad4gd/ev/ecv/Areacoveredbysnow>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Area  covered by snow " ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Area  covered by snow " ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Snow> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "1km (100m in complex terrain)" ;
+        base:requiredUncertainty  "5% (maximum error of omission and commission in snow area); location accuracy better than 1/3 IFOV with target IFOV 100 m in areas of complex terrain, 1 km elsewhere" ;
+        base:stability            "4% (maximum error of omission and commission in snow area); location accuracy better than 1/3 IFOV with target IFOV 100 m in areas of complex terrain, 1 km elsewhere" ;
+        base:relatedStandard      "WMO (2008c) IGOS (2007), IACS/UNESCO, 2009" ;
+        base:inSitu               "WIGOS, GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/snowdepth>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "snow depth  " ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "snow depth  " ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Snow> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "1km (100m in complex terrain)" ;
+        base:requiredUncertainty  "10mm" ;
+        base:stability            "10mm" ;
+        base:relatedStandard      "WMO (2008c) IGOS (2007), IACS/UNESCO, 2009" ;
+        base:inSitu               "WIGOS, GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/snowwaterequivalent>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "snow water equivalent" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "snow water equivalent" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/Snow> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "1km" ;
+        base:requiredUncertainty  "10mm" ;
+        base:stability            "10mm" ;
+        base:inSitu               "WIGOS, GCW" .
+
+<https://w3id.org/ad4gd/ev/ecv/Carboninsoil>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Carbon in soil" ;
+        rdfs:isDefinedBy  <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Carbon in soil" ;
+        skos:broader      <https://w3id.org/ad4gd/ev/ecv/SoilCarbon> ;
+        schema:frequency  "5 - 10 year" ;
+        base:resolution   "20  km" ;
+        base:inSitu       "TBD" .
+
+<https://w3id.org/ad4gd/ev/ecv/Mineralsoilbulkdensityto30cmsand1m>
+        rdf:type          skos:Concept ;
+        rdf:type          base:ecv ;
+        dct:identifier    "Mineral soil bulk density to 30 cms and 1m" ;
+        rdfs:isDefinedBy  <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme     base:ecv ;
+        skos:prefLabel    "Mineral soil bulk density to 30 cms and 1m" ;
+        skos:broader      <https://w3id.org/ad4gd/ev/ecv/SoilCarbon> ;
+        schema:frequency  "5 - 10 year" ;
+        base:resolution   "20 km" ;
+        base:inSitu       "TBD" .
+
+<https://w3id.org/ad4gd/ev/ecv/Peatlandstotaldepthofprofile,areaandlocation>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Peatlands total depth of profile, area and location" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Peatlands total depth of profile, area and location" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SoilCarbon> ;
+        schema:frequency          "5- 10  year" ;
+        base:resolution           "2 m vertical 20 m horizontal" ;
+        base:requiredUncertainty  "10%" ;
+        base:inSitu               "TBD" .
+
+<https://w3id.org/ad4gd/ev/ecv/Surfacesoilmoisture>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Surface soil moisture" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Surface soil moisture" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SoilMoisture> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "1-25 km" ;
+        base:requiredUncertainty  "0.04 m3/m3" ;
+        base:stability            "0.01 m3/m3/year" ;
+        base:relatedStandard      "WMO (2008b)" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "ISMN" .
+
+<https://w3id.org/ad4gd/ev/ecv/Freeze/thaw>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Freeze/thaw" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Freeze/thaw" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SoilMoisture> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "1-25 km" ;
+        base:requiredUncertainty  "90%" ;
+        base:stability            "tbd" ;
+        base:satellite            "WGClimate" ;
+        base:inSitu               "ISMN" .
+
+<https://w3id.org/ad4gd/ev/ecv/Surfaceinundation>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Surface inundation" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Surface inundation" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SoilMoisture> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "1-25 km" ;
+        base:requiredUncertainty  "90%" ;
+        base:stability            "tbd" ;
+        base:inSitu               "ISMN" .
+
+<https://w3id.org/ad4gd/ev/ecv/Root-zonesoilmoisture>
+        rdf:type                  skos:Concept ;
+        rdf:type                  base:ecv ;
+        dct:identifier            "Root-zone soil moisture" ;
+        rdfs:isDefinedBy          <https://github.com/EuropaBON/ecv-Descriptions/wiki/Master-ecv-List> ;
+        skos:inScheme             base:ecv ;
+        skos:prefLabel            "Root-zone soil moisture" ;
+        skos:broader              <https://w3id.org/ad4gd/ev/ecv/SoilMoisture> ;
+        schema:frequency          "Daily" ;
+        base:resolution           "1-25 km" ;
+        base:requiredUncertainty  "0.04 m3/m3" ;
+        base:stability            "0.01 m3/m3/year" ;
+        base:inSitu               "ISMN" .
